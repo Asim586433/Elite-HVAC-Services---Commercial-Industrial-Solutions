@@ -104,7 +104,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 58, 95, 0.8), rgba(26, 58, 95, 0.9)), url('https://images.unsplash.com/photo-1633382442271-66e7e56b6f85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(26, 58, 95, 0.8), rgba(26, 58, 95, 0.9)), url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -711,11 +711,12 @@
             <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             <nav id="mainNav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -727,8 +728,8 @@
             <h2>Premium HVAC Solutions for Commercial & Industrial Clients</h2>
             <p>With over 20 years of experience, we provide elite heating, ventilation, and air conditioning services tailored to your business needs.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="services.html" class="btn">Our Services</a>
-                <a href="contact.html" class="btn btn-secondary">Get a Free Consultation</a>
+                <a href="#services" class="btn">Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Get a Free Consultation</a>
             </div>
         </div>
     </section>
@@ -748,7 +749,7 @@
                     <div class="service-content">
                         <h3>Commercial HVAC Installation</h3>
                         <p>Professional installation of high-efficiency HVAC systems for office buildings, retail spaces, and industrial facilities.</p>
-                        <a href="services.html#installation" class="read-more">Learn More →</a>
+                        <a href="#" class="read-more" id="installationBtn">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -758,7 +759,7 @@
                     <div class="service-content">
                         <h3>Preventive Maintenance</h3>
                         <p>Scheduled maintenance programs to ensure optimal performance and extend the lifespan of your HVAC equipment.</p>
-                        <a href="services.html#maintenance" class="read-more">Learn More →</a>
+                        <a href="#" class="read-more" id="maintenanceBtn">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -768,12 +769,12 @@
                     <div class="service-content">
                         <h3>24/7 Emergency Repair</h3>
                         <p>Rapid response team available around the clock to address critical HVAC system failures and minimize downtime.</p>
-                        <a href="services.html#repair" class="read-more">Learn More →</a>
+                        <a href="#" class="read-more" id="repairBtn">Learn More →</a>
                     </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="services.html" class="btn">View All Services</a>
+                <a href="#contact" class="btn">Get a Free Quote</a>
             </div>
         </div>
     </section>
@@ -787,10 +788,11 @@
                     <p>For over two decades, Elite HVAC Services has been the trusted partner for commercial and industrial clients seeking premium climate control solutions.</p>
                     <p>Our team of certified technicians brings expertise in designing, installing, and maintaining complex HVAC systems for facilities of all sizes.</p>
                     <p>We pride ourselves on delivering reliable, energy-efficient solutions that optimize performance while reducing operational costs for our clients.</p>
-                    <a href="about.html" class="btn">Learn More About Us</a>
+                    <a href="#contact" class="btn">Contact Us Today</a>
                 </div>
                 <div class="about-image">
-                    <img src="https://i.ibb.co/j92mSL8P/HVAC-Technicians-at-Work.jpg" alt="HVAC Technicians at Work">
+                    <!-- REPLACED IMAGE: HVAC Technicians at Work -->
+                    <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="HVAC Technicians at Work">
                 </div>
             </div>
         </div>
@@ -801,15 +803,15 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <h3>20+</h3>
+                    <h3 id="yearsCounter">0</h3>
                     <p>Years of Experience</p>
                 </div>
                 <div class="stat-item">
-                    <h3>500+</h3>
+                    <h3 id="projectsCounter">0</h3>
                     <p>Projects Completed</p>
                 </div>
                 <div class="stat-item">
-                    <h3>98%</h3>
+                    <h3 id="satisfactionCounter">0%</h3>
                     <p>Client Satisfaction</p>
                 </div>
                 <div class="stat-item">
@@ -821,7 +823,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
                 <h2>What Our Clients Say</h2>
@@ -878,7 +880,8 @@
             <div class="blog-grid">
                 <div class="blog-card">
                     <div class="blog-img">
-                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="HVAC Efficiency">
+                        <!-- REPLACED IMAGE: HVAC Efficiency -->
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="HVAC Efficiency">
                     </div>
                     <div class="blog-content">
                         <h3>5 Ways to Improve Your Commercial HVAC Efficiency</h3>
@@ -887,7 +890,7 @@
                             <span><i class="far fa-clock"></i> 5 min read</span>
                         </div>
                         <p>Learn practical strategies to optimize your HVAC system performance and reduce energy costs.</p>
-                        <a href="blog-single.html" class="read-more">Read More →</a>
+                        <a href="#" class="read-more" id="blog1Btn">Read More →</a>
                     </div>
                 </div>
                 <div class="blog-card">
@@ -901,12 +904,13 @@
                             <span><i class="far fa-clock"></i> 4 min read</span>
                         </div>
                         <p>Discover how preventive maintenance can extend your equipment lifespan and prevent costly repairs.</p>
-                        <a href="blog-single.html" class="read-more">Read More →</a>
+                        <a href="#" class="read-more" id="blog2Btn">Read More →</a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-img">
-                        <img src="https://images.unsplash.com/photo-1581093458791-8a6b22e2dfe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="HVAC System Selection">
+                        <!-- REPLACED IMAGE: HVAC System Selection -->
+                        <img src="https://images.unsplash.com/photo-1581093458791-8a6b22e2dfe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="HVAC System Selection">
                     </div>
                     <div class="blog-content">
                         <h3>Choosing the Right HVAC System for Your Facility</h3>
@@ -915,12 +919,9 @@
                             <span><i class="far fa-clock"></i> 7 min read</span>
                         </div>
                         <p>A comprehensive guide to selecting the optimal HVAC solution for your commercial space.</p>
-                        <a href="blog-single.html" class="read-more">Read More →</a>
+                        <a href="#" class="read-more" id="blog3Btn">Read More →</a>
                     </div>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="blog.html" class="btn">View All Articles</a>
             </div>
         </div>
     </section>
@@ -931,14 +932,56 @@
             <h2>Stay Updated with HVAC Insights</h2>
             <p>Subscribe to our newsletter for industry news, maintenance tips, and exclusive offers.</p>
             <form class="newsletter-form" id="newsletterForm">
-                <input type="email" placeholder="Enter your email address" required>
+                <input type="email" placeholder="Enter your email address" required id="newsletterEmail">
                 <button type="submit">Subscribe</button>
             </form>
         </div>
     </section>
 
+    <!-- Contact Form Section -->
+    <section class="page-content" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team for a free consultation or emergency service</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" class="form-control" required>
+                            <option value="">Select a Service</option>
+                            <option value="installation">Commercial Installation</option>
+                            <option value="maintenance">Preventive Maintenance</option>
+                            <option value="repair">Emergency Repair</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell us about your project or needs" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -954,21 +997,22 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="services.html#installation">Commercial Installation</a></li>
-                        <li><a href="services.html#maintenance">Preventive Maintenance</a></li>
-                        <li><a href="services.html#repair">Emergency Repair</a></li>
-                        <li><a href="services.html">Energy Audits</a></li>
-                        <li><a href="services.html">System Upgrades</a></li>
+                        <li><a href="#services">Commercial Installation</a></li>
+                        <li><a href="#services">Preventive Maintenance</a></li>
+                        <li><a href="#services">Emergency Repair</a></li>
+                        <li><a href="#services">Energy Audits</a></li>
+                        <li><a href="#services">System Upgrades</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -987,6 +1031,121 @@
         </div>
     </footer>
 
+    <!-- Service Detail Modals -->
+    <div class="modal" id="installationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeInstallation">&times;</span>
+            <h2>Commercial HVAC Installation</h2>
+            <p>Our commercial HVAC installation services include:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Custom system design for your facility</li>
+                <li>Energy-efficient equipment selection</li>
+                <li>Professional installation by certified technicians</li>
+                <li>System testing and commissioning</li>
+                <li>Staff training on system operation</li>
+            </ul>
+            <p>We work with leading manufacturers to provide reliable, high-performance systems tailored to your specific needs.</p>
+            <a href="#contact" class="btn" style="margin-top: 1rem;">Get a Quote</a>
+        </div>
+    </div>
+
+    <div class="modal" id="maintenanceModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeMaintenance">&times;</span>
+            <h2>Preventive Maintenance</h2>
+            <p>Our preventive maintenance programs help you:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Extend equipment lifespan</li>
+                <li>Reduce energy consumption</li>
+                <li>Prevent costly breakdowns</li>
+                <li>Maintain optimal performance</li>
+                <li>Ensure regulatory compliance</li>
+            </ul>
+            <p>We offer flexible maintenance schedules and comprehensive service packages to meet your operational requirements.</p>
+            <a href="#contact" class="btn" style="margin-top: 1rem;">Schedule Maintenance</a>
+        </div>
+    </div>
+
+    <div class="modal" id="repairModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeRepair">&times;</span>
+            <h2>24/7 Emergency Repair</h2>
+            <p>Our emergency repair services include:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Rapid response - typically within 2 hours</li>
+                <li>Diagnosis and troubleshooting</li>
+                <li>Quality replacement parts</li>
+                <li>System restoration</li>
+                <li>Follow-up inspection</li>
+            </ul>
+            <p>Our certified technicians are available 24/7 to minimize downtime and get your operations back online quickly.</p>
+            <a href="#contact" class="btn" style="margin-top: 1rem;">Request Emergency Service</a>
+        </div>
+    </div>
+
+    <!-- Blog Detail Modals -->
+    <div class="modal" id="blog1Modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeBlog1">&times;</span>
+            <h2>5 Ways to Improve Your Commercial HVAC Efficiency</h2>
+            <div class="blog-meta" style="margin: 1rem 0;">
+                <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                <span><i class="far fa-clock"></i> 5 min read</span>
+            </div>
+            <p>Improving your commercial HVAC efficiency can significantly reduce operational costs and extend equipment lifespan. Here are five effective strategies:</p>
+            <ol style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Regular maintenance and filter changes</li>
+                <li>Upgrade to energy-efficient equipment</li>
+                <li>Implement zoning systems for better control</li>
+                <li>Optimize thermostat settings for occupancy patterns</li>
+                <li>Seal and insulate ductwork to prevent energy loss</li>
+            </ol>
+            <p>By implementing these strategies, businesses have reported energy savings of up to 30% while improving indoor comfort.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="blog2Modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeBlog2">&times;</span>
+            <h2>The Importance of Regular HVAC Maintenance</h2>
+            <div class="blog-meta" style="margin: 1rem 0;">
+                <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                <span><i class="far fa-clock"></i> 4 min read</span>
+            </div>
+            <p>Regular HVAC maintenance is crucial for commercial facilities for several reasons:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li>Prevents unexpected breakdowns and costly repairs</li>
+                <li>Extends equipment lifespan by 5-10 years</li>
+                <li>Maintains optimal energy efficiency</li>
+                <li>Ensures consistent indoor comfort</li>
+                <li>Improves indoor air quality</li>
+                <li>Helps maintain manufacturer warranties</li>
+            </ul>
+            <p>A well-maintained HVAC system can save businesses thousands of dollars in repair costs and energy bills over its lifetime.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="blog3Modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeBlog3">&times;</span>
+            <h2>Choosing the Right HVAC System for Your Facility</h2>
+            <div class="blog-meta" style="margin: 1rem 0;">
+                <span><i class="far fa-calendar"></i> April 10, 2023</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+            </div>
+            <p>Selecting the appropriate HVAC system for your commercial facility requires careful consideration of several factors:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem;">
+                <li><strong>Facility Size and Layout:</strong> Square footage, ceiling height, and room configuration</li>
+                <li><strong>Usage Patterns:</strong> Occupancy schedules and thermal load requirements</li>
+                <li><strong>Budget:</strong> Initial investment vs long-term operational costs</li>
+                <li><strong>Energy Efficiency:</strong> SEER ratings and energy-saving features</li>
+                <li><strong>Zoning Needs:</strong> Independent temperature control for different areas</li>
+                <li><strong>Future Expansion:</strong> Scalability for business growth</li>
+            </ul>
+            <p>Consulting with HVAC professionals can help you make an informed decision that balances performance, efficiency, and cost.</p>
+        </div>
+    </div>
+
     <!-- Toast Notification -->
     <div class="toast" id="toast"></div>
 
@@ -1000,15 +1159,23 @@
         // Newsletter Form Submission
         document.getElementById('newsletterForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
+            const email = document.getElementById('newsletterEmail').value;
             showToast(`Thank you for subscribing with ${email}! You'll receive our next newsletter.`);
+            this.reset();
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            showToast(`Thank you ${name}! Your message has been sent. We'll contact you within 24 hours.`);
             this.reset();
         });
 
         // Smooth Scrolling for Navigation Links
         document.querySelectorAll('nav a, .read-more, .btn').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                if(this.getAttribute('href').startsWith('#')) {
+                if(this.getAttribute('href') && this.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
@@ -1027,6 +1194,70 @@
             });
         });
 
+        // Service Modal Functionality
+        document.getElementById('installationBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('installationModal').style.display = 'flex';
+        });
+
+        document.getElementById('maintenanceBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('maintenanceModal').style.display = 'flex';
+        });
+
+        document.getElementById('repairBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('repairModal').style.display = 'flex';
+        });
+
+        // Blog Modal Functionality
+        document.getElementById('blog1Btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('blog1Modal').style.display = 'flex';
+        });
+
+        document.getElementById('blog2Btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('blog2Modal').style.display = 'flex';
+        });
+
+        document.getElementById('blog3Btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('blog3Modal').style.display = 'flex';
+        });
+
+        // Close Modal Functions
+        document.getElementById('closeInstallation').addEventListener('click', function() {
+            document.getElementById('installationModal').style.display = 'none';
+        });
+
+        document.getElementById('closeMaintenance').addEventListener('click', function() {
+            document.getElementById('maintenanceModal').style.display = 'none';
+        });
+
+        document.getElementById('closeRepair').addEventListener('click', function() {
+            document.getElementById('repairModal').style.display = 'none';
+        });
+
+        document.getElementById('closeBlog1').addEventListener('click', function() {
+            document.getElementById('blog1Modal').style.display = 'none';
+        });
+
+        document.getElementById('closeBlog2').addEventListener('click', function() {
+            document.getElementById('blog2Modal').style.display = 'none';
+        });
+
+        document.getElementById('closeBlog3').addEventListener('click', function() {
+            document.getElementById('blog3Modal').style.display = 'none';
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+            }
+        });
+
         // Toast Notification Function
         function showToast(message) {
             const toast = document.getElementById('toast');
@@ -1038,6 +1269,43 @@
             }, 5000);
         }
 
+        // Animated Counter for Stats
+        function animateCounter(element, target, duration) {
+            let start = 0;
+            const increment = target / (duration / 16); // 60fps
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start);
+                }
+            }, 16);
+        }
+
+        // Initialize counters when stats section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(document.getElementById('yearsCounter'), 20, 2000);
+                    animateCounter(document.getElementById('projectsCounter'), 500, 2000);
+                    
+                    // For percentage counter
+                    let satisfaction = 0;
+                    const satisfactionInterval = setInterval(() => {
+                        satisfaction += 1;
+                        document.getElementById('satisfactionCounter').textContent = satisfaction + '%';
+                        if (satisfaction >= 98) clearInterval(satisfactionInterval);
+                    }, 20);
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector('.stats'));
+
         // Test all interactive elements
         console.log("All website components loaded successfully");
         
@@ -1047,28 +1315,25 @@
                 console.log(`Button clicked: ${this.textContent}`);
             });
         });
-        
-        // Test blog read more links
-        document.querySelectorAll('.read-more').forEach(link => {
-            link.addEventListener('click', function(e) {
-                if(this.getAttribute('href') === 'blog-single.html') {
-                    e.preventDefault();
-                    console.log(`Read more clicked for: ${this.closest('.blog-content').querySelector('h3').textContent}`);
-                    showToast('In a complete implementation, this would navigate to the full blog post.');
-                }
-            });
-        });
 
-        // Add active class to current page in navigation
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        // Add active class to current navigation item based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('nav a');
             
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
             navLinks.forEach(link => {
-                if(link.getAttribute('href') === currentPage) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
                     link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
                 }
             });
         });
